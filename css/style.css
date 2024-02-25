@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url('../images/imagem6.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    height: 50px;
+}
+
+h2{
+    text-align: center;
+}
+
+
+#central {
+    width: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#central form {
+    display: flex;
+    flex-direction: column;
+}
+
+#central form input {
+    padding: 8px 12px;
+    border: 2px solid #2c4766;
+    outline: none;
+    border-radius: 10px;
+    background: rgb(212, 206, 206);
+    margin-top: 4px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+#central form label {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+}
+
+#central form button {
+    width: 400px;
+    padding: 15px;
+    background: darkblue;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#central form button:hover {
+    background: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.btnOpenModal {
+    font-size: x-large;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid lightblue;
+}
+
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+    display: none;
+
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 35%;
+
+   
+}
+
+.modal span {
+    margin: 10px auto;
+    color: red;
+    font-size: 20px;
+    
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btns button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btnOK {
+    background-color: blue;
+    
+}
+
+@media (max-width: 500px) {
+    #central {
+        padding: 10px;
+        width: 80%;
+    }
+    #central form label,
+    span,
+    .btns button{
+    font-size: smaller;
+
+}
+}
+

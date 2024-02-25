@@ -1,0 +1,50 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Modal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="central">
+        <h1>SISTEMA ESCOLAR</h1>
+        <form>
+
+            <label for="nome">NOME</label>
+            <input type="text" id="nome">
+
+            <label for="nota1">1º UNIDADE</label>
+            <input type="number" id="nota1">
+
+            <label for="nota2">2º UNIDADE</label>
+            <input type="number" id="nota2">
+
+            <label for="nota3">3º UNIDADE</label>
+            <input type="number" id="nota3">
+
+            <button id="calcular" onclick="calcularEMostrarModal()">CALCULAR</button>
+        </form>
+       
+    </div>
+
+    <div class="modal-container">
+        <div class="modal">
+            <h2>RESULTADO</h2>
+            <hr />
+            <span id="modalText"></span>
+            <hr />
+            <div class="btns">
+                <button class="btnOK" onclick="closeModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    
+
+
+
+</body>
+</html>
